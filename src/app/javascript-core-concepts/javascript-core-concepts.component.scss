@@ -1,0 +1,114 @@
+/* Reset some defaults and set font */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f9f9fb;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background: #282c34;
+  color: #fff;
+  padding: 24px 0 12px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+
+header h1 {
+  margin: 0 0 12px 0;
+  font-size: 2.2rem;
+}
+
+nav {
+  margin-top: 12px;
+}
+
+nav a {
+  color: #ffd700;
+  text-decoration: none;
+  margin: 0 14px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #fff8dc;
+}
+
+/* Main content area */
+main {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+section {
+  flex: 2 1 60%;
+}
+
+aside {
+  flex: 1 1 30%;
+  background: #fffbe8;
+  padding: 18px 16px;
+  margin-top: 12px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+aside h4 {
+  margin-top: 0;
+  color: #b38600;
+}
+
+/* Articles */
+article {
+  background: #fff;
+  padding: 20px 18px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  transition: box-shadow 0.15s;
+}
+
+article:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.09);
+}
+
+article h3 {
+  margin-top: 0;
+  color: #2077c7;
+}
+
+article footer {
+  margin-top: 14px;
+  font-size: 0.9em;
+  color: #818181;
+}
+
+/* Footer */
+footer {
+  background: #282c34;
+  color: #fff;
+  padding: 14px 0;
+  text-align: center;
+  margin-top: 48px;
+  font-size: 1rem;
+  letter-spacing: .5px;
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.04);
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+  main {
+    flex-direction: column;
+    gap: 18px;
+  }
+  aside {
+    margin-top: 0;
+  }
+}

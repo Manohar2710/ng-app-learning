@@ -1,0 +1,31 @@
+<header>
+  <h1 [innerHTML]="innerHTMLExample"></h1>
+  <nav>
+    <a routerLink="/">Home</a>
+    <a routerLink="/about">About</a>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h2>Latest News</h2>
+    <article *ngFor="let news of newsArticles">
+      <h3>{{ news.title }}</h3>
+      <p>{{ news.body }}</p>
+      <footer>Published on {{ news.date | date }}</footer>
+    </article>
+  </section>
+  <aside>
+    <h4>Related Links</h4>
+    <ul>
+      <li *ngFor="let link of relatedLinks">
+        <a [href]="link.url">{{ link.label }}</a>
+      </li>
+    </ul>
+  </aside>
+  <button mat-button (click)="windowAlertOutputTypeExample()"> window alert example</button>
+</main>
+
+<footer>
+  <p>&copy; 2025 My Angular App</p>
+</footer>
